@@ -1,6 +1,6 @@
 module.exports = (Franz, options) => {
 	function getMessages() {
-    let notifications = document.querySelector('[data-entity="Entity.UserNotification"] > span > span.scene-space-tab-button__count');
+		let notifications = document.querySelector('[data-entity="Entity.UserNotification"] > span > span.scene-space-tab-button__badge-count');
     let direct_notifications = document.querySelectorAll('.scene-space__drawer  [data-entity="Entity.User"].scene-space-tab-button--flash>.scene-space-tab-button__flash');
     let team_notifications = document.querySelectorAll('.scene-space__drawer  [data-entity="Entity.Workroom"].scene-space-tab-button--flash>.scene-space-tab-button__flash');
     let notification_counter = parseInt(notifications.innerText);
